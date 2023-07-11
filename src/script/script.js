@@ -1,3 +1,6 @@
+import img1 from '../images/close.svg'; 
+import img2 from '../images/menu.svg';
+
 const menu = document.querySelector('#menu');
 const iconMenu = document.querySelector('#menu img');
 const nav = document.querySelector('#nav-menu');
@@ -8,14 +11,14 @@ window.addEventListener('resize', () => {
   if (window.innerWidth > 767) {
     nav.classList.contains('menu-mobile') ? nav.classList.remove('menu-mobile') : '';
     !ul.classList.contains('mdMax:hidden') ? ul.classList.add('mdMax:hidden') : '';
-    !iconMenu.src.includes('menu.svg') ? iconMenu.src = 'src/images/menu.svg' : '';
+    !iconMenu.src.includes('menu.svg') ? iconMenu.src = `${img2}` : '';
   } 
 });
 
 menu.addEventListener('click', () => {
   nav.classList.toggle('menu-mobile');
   ul.classList.toggle('mdMax:hidden');
-  iconMenu.src = nav.classList.contains('menu-mobile') ? 'src/images/close.svg' : 'src/images/menu.svg';
+  iconMenu.src = nav.classList.contains('menu-mobile') ? `${img1}` : `${img2}`;
 });
 
 links.forEach(link => { 

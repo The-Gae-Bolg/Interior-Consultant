@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interior Consultant</title>
+    <link rel="stylesheet" href="src/style/style.css">
+  </head>
+  <body>
+    <div id="app" class="bg-[#181719] w-full">
+      <div class="md:w-10/12 w-11/12 mx-auto py-8">
+        <header class="flex justify-between items-center">
+          <div class="logo w-1/2">
+            <span class="border border-white uppercase font-extralight text-sm text-white p-2 font-CrimsonPro">
+              This Interior
+            </span>
+          </div>
+          <nav id="nav-menu" class="w-1/2">
+            <ul class="mdMax:hidden flex flex-col gap-8 md:gap-0 md:flex-row md:justify-around font-bold text-lg text-white">
+              <li><a class="border-b-2 border-white pb-1 menu-link" href="#home">Home</a></li>
+              <li><a class="pb-1 menu-link" href="#collection">Collection</a></li>
+              <li><a class="pb-1 menu-link" href="#about">About</a></li>
+              <li><a class="pb-1 menu-link" href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <button id="menu" class="z-10 md:hidden">
+            <img src="src/images/menu.svg" alt="menu">
+          </button>
+        </header>
+        <main class="flex flex-col md:flex-row gap-y-14 md:gap-y-0 justify-center items-center lg:gap-x-20 md:py-40 py-10 text-white">
+          <div class="left flex flex-col gap-y-10 w-full lg:w-4/12 md:w-1/2">
+            <h1 class="font-medium text-4xl leading-[46px] md:text-5xl md:leading-[61px] font-Lora">
+              Modern interior
+            </h1>
+            <p class="font-normal text-2xl leading-7 whitespace-pre-line font-Montserrat">A full-Service residential & 
+              commercial interior design and
+              staging company offering
+              professional organizing & 
+              eco-services.
+            </p>
+            <a class="font-bold text-lg leading-5 group hover:text-gray-400 transition duration-500 font-Montserrat" href="#">
+              Read more <span class="relative top-[1.5px] left-2">⮕</span>
+            </a>
+          </div>
+          <div class="right w-full lg:w-8/12 md:w-1/2 relative">
+            <img src="src/images/photo1.png" alt="img 1">
+            <div class="card px-10 pt-6 md:w-full lg:w-[410px] w-[300px] shadow-card-sd absolute -bottom-20 md:right-0 lg:right-10 right-4 bg-[#181719]">
+              <div class="image-info flex flex-row gap-x-5">
+                <img class="rounded-full md:w-14 w-9" src="src/images/photo2.png" alt="img 2">
+                <div class="info flex flex-col justify-center gap-y-2">
+                  <h3 class="font-medium text-sm leading-[14px] md:leading-4 text-white font-Montserrat">
+                    Aliza Webber
+                  </h3>
+                  <p class="font-medium md:text-xs text-[10px] leading-3 md:leading-[14px] text-[#828282] font-Montserrat">
+                    Interior designer
+                  </p>
+                </div>
+              </div>
+              <h2 class="font-bold md:text-2xl md:leading-8 text-lg leading-6 whitespace-pre-line pb-6 pt-4 font-Lora">Designed in 2020 by 
+                Aliza Webber
+              </h2>
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer>
+        <p class="font-medium text-sm leading-4 text-center text-[#BDBDBD] pb-6 pt-24 font-Montserrat">
+          created by <span class="font-bold">The-Gae-Bolg</span> - devChallenges.io
+        </p>
+      </footer>
+    </div>
+    <script src="src/script/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../src/fonts/Montserrat.ttf');
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('../../src/fonts/Lora.ttf');
+}
+
+@font-face {
+  font-family: 'CrimsonPro';
+  src: url('../../src/fonts/CrimsonPro.ttf');
+}
+
+.menu-mobile {
+  @apply w-full fixed top-0 left-0 h-full bg-[#181719] flex flex-col justify-center items-center text-center z-10;
+}
